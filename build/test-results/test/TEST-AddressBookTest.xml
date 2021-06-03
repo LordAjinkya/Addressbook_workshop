@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-03T18:17:47" hostname="DESKTOP-3B5OBH7" time="0.022">
+<testsuite name="AddressBookTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-03T18:23:35" hostname="DESKTOP-3B5OBH7" time="0.033">
   <properties/>
-  <testcase name="givenNameWhenDeleteShouldReturnTrue()" classname="AddressBookTest" time="0.022"/>
-  <system-out><![CDATA[Enter a first name of person: Ajinkya
-]]></system-out>
+  <testcase name="givenListOfMultipleContactsWhenAddedShouldReturnTrue()" classname="AddressBookTest" time="0.033"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
