@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="AddressbookmainTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-03T06:49:55" hostname="DESKTOP-3B5OBH7" time="0.071">
-  <properties/>
-  <testcase name="givenContact_WhenAddedToAddressBook_ShouldReturnTrue()" classname="AddressbookmainTest" time="0.071"/>
-  <system-out><![CDATA[ContactDetails [firstName=Ajinkya, lastName=Narale, address=Dhantoli, city=Katol, state=MH, zip=226001, phoneNo=9180256231, email=aj.bc@gmail.com]
-[ContactDetails [firstName=Ajinkya, lastName=Narale, address=Dhantoli, city=Katol, state=MH, zip=226001, phoneNo=9180256231, email=aj.bc@gmail.com]]
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
