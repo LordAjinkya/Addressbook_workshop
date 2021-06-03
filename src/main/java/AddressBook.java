@@ -12,17 +12,15 @@ public class AddressBook {
 
     /* @Description - Add new contacts to the address book  */
 
-    public boolean addContacts(Contacts contacts) {
-        System.out.println(contacts);
-        List<Contacts> contactList = new ArrayList<>();
+    public List<Contacts> addContacts(Contacts contact) {
+        contactList = new ArrayList<>();
         try {
-            contactList.add(contacts);
-            System.out.println(contactList);
-            return true;
+            contactList.add(contact);
+            return contactList;
         } catch (Exception e) {
             e.printStackTrace();
         }
-        return false;
+        return contactList;
     }
     /*Edit the contact details in address book.
      * Check a first name is match in address book then change details of that person.*/
@@ -64,5 +62,22 @@ public class AddressBook {
             e.printStackTrace();
         }
         return null;
+    }
+    /*Delete a contact using person first name ina address book. */
+    public List<Contacts> deleteContacts(List<Contacts> contactsList, String firstName) {
+        try {
+            for (Contacts contact : contactsList) {
+                if (contact.firstName.equals(firstName)) {
+                    contactsList.remove(contactsList.indexOf(contact));
+                    System.out.println("Enter a first name of person: " +firstName);
+                    break;
+                }
+            }
+            return contactsList;
+        } catch (Exception e) {
+            System.out.println("Entered Name was not found in address book :" +e);
+            e.printStackTrace();
+        }
+        return contactsList;
     }
 }
