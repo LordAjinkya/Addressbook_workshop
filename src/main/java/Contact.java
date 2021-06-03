@@ -1,4 +1,4 @@
-public class PersonDetails {
+public class Contact{
     String firstName;
     String lastName;
     String address;
@@ -8,7 +8,7 @@ public class PersonDetails {
     long phoneNo;
     String email;
 //passing the variables into the class person details
-    public PersonDetails(String firstName, String lastName, String address, String city, String state, int zip,
+    public Contact(String firstName, String lastName, String address, String city, String state, int zip,
                          long phoneNo, String email) {
         super();
         this.firstName = firstName; ///using this constructor to call variable from parent class
@@ -22,7 +22,7 @@ public class PersonDetails {
     }
     @Override ///to override the functionality of an existing method.
     public String toString() {
-        return "PersonDetails [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
+        return "ContactDetails [firstName=" + firstName + ", lastName=" + lastName + ", address=" + address + ", city="
                 + city + ", state=" + state + ", zip=" + zip + ", phoneNo=" + phoneNo + ", email=" + email + "]";
     }
 }
