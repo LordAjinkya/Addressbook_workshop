@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 public class AddressBook {
 
@@ -201,9 +203,27 @@ public class AddressBook {
     public int getSizeOfAddressBook(){
         return contactlist.size();
     }
+    /*This method used to search contacts in each AddressBookList by particularCity
+    @param takes city name
+    return List of Contacts in particular city
+    */
+    public List<Contact> checkContactByStateStream(String city) {
+        List<Contact> contactsByCity = contactlist.stream().filter(contac -> contac.city.equals(city))
+                .collect(Collectors.toList());
+        return contactsByCity;
+    }
 
     @Override
     public boolean equals(Object o) {
         return super.equals(o);
+    }
+    /*This method used to search contacts in each AddressBookList by particularState
+   @param takes State name
+   return List of Contacts in particular State
+   */
+    public List<Contact> getContactsByState(String sample_state) {
+        List<Contact> contactsByState = contactlist.stream().filter(contac -> contac.state.equals(sample_state))
+                .collect(Collectors.toList());
+        return contactsByState;
     }
 }
